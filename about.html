@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body id="top">
+  <body class="class-for-about">
 
     <header>
       <div id="header-contents">
@@ -28,19 +28,69 @@
 
     <aside>
       <figure>
-        <img src="images/graduation.jpg" alt="Day of Graduation." />
-        <figcaption>"Graduation day at the University of Miami.” </figcaption>
+        <img src="images/marilou-photo.jpg" alt="Photo of Marilou." />
+        <figcaption>"Photo of Marilou Chardin” </figcaption>
       </figure>
     </aside>
 
+    <main>
+      <section id="aboutme">
+        <h2>About me</h2>
 
-    <footer>
-      <p><a href="#top">Return to top</a></p>
-    </footer>
+        <article>
+          <h3>Bonjour!</h3>
+          <p>I’m Marilou, a graduate student&ndash;athlete working remotely for Sportif Consulting on scouting young French athletes eager to study and pursue sports in the  <abbr title="United States">US</abbr>.</p>
+        </article>
+      </section>
 
+      <section id="rest">
+        <article>
+          <p>Born and raised in France, I competed in sports at a national level before flying to Miami at the age of 18. Earning a <abbr title="Bachelor of Business Administration">B.B.A.</abbr> degree in International Marketing and Finance, I am currently enrolled in the Media Management <abbr title="Master of Science">M.S.</abbr> program at the University of Miami while being part their Division &#8544;, rowing team.</p>
+
+          <p>With an athletic background from rowing for the French national team to an American collegiate path, I gained a mindful but competitive approach. I am fueled by a passion for understanding the nuances of cross&ndash;cultural social media.</p>
+
+          <p>Being a student&ndash;athlete for over four years, I am eager to both build on my academic foundations in marketing and media as well as athletic experiences. While staying in tune with the latest media and marketing strategies through continued coursework.</p>
+
+          <p>This hunger to thrive in team environment and determination turned into actions leading me to receive awards from <abbr title="Atlantic Coast Conference">ACC</abbr> with an All&ndash;ACC Academic Team and All&ndash;ACC Second awards. Meanwhile, I took part in the leadership board on our team by implementing projects to ensure a strong team dynamic. But also committed 25 hours per week to training and competitive play while maintaining course load.</p>
+
+          <p>Out of the classroom you’ll find me dreaming of sports, doodling with oil pastel, and admiring all the cute cats. I am currently looking for an internship in the social media or marketing field and I am always interested in a challenge. Reach out at <a href = "mailto: marilou.milou.chardin@gmail.com">marilou.milou.chardin@gmail.com</a> to connect&excl;</p>
+        </article>
+      </section>
+
+    </main>
+    
     <footer>
+    <button onclick="scrollToTop()">
+         Click to scroll to top
+    </button>
       <p>&copy; Copyright <time datetime="2021">2021</time> &ndash; Marilou Chardin</p>
     </footer>
+
+    <div id="normal"></div>
+
+    <script>
+      var normal = document.querySelector("#normal");
+
+      window.addEventListener("scroll", function() {
+        if (window.scrollY > 20) {
+          normal.style.backgroundColor = "rgb(99,91,156,0.95)";
+        } else {
+          normal.style.backgroundColor = "rgb(99,91,156,0.75)";
+        }
+
+        normal.style.transition = "all .5s linear";
+
+      });
+    </script>
+
+    <script src=
+      "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script>
+        function scrollToTop() {
+            $(window).scrollTop(0);
+        }
+    </script>
 
   </body>
 </html>

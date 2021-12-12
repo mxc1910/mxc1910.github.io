@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>Marilou Chardin &#124; Rowing</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
   </head>
 
-  <body id="top">
+  <body class="class-for-rowing">
 
     <header>
       <div id="header-contents">
@@ -26,15 +26,59 @@
       </div>
     </header>
 
+    <main>
+      <section>
+        <h2>My rowing career</h2>
+          <figure>
+            <img src="../images/race-france.jpg" alt="First race in France" />
+            <figcaption>I started to row at the age of ten, this is my first race in Amiens, France. Little did I know what lay ahead&excl; From the French National team to studying abroad.</figcaption>
+          </figure>
+
+          <figure class="alt">
+            <img src="../images/practice-um.jpg" alt="UM Practice in the eight" />
+            <figcaption>Earning a full ride to row for the University of Miami. I discovered a completely different way to approach the sport and how to adapt to this American culture. (Photo by: Miami Hurricanes Rowing)</figcaption>
+          </figure>
+
+          <figure>
+            <img src="../images/marilou-um.jpg" alt="One practice in the Spring." />
+            <figcaption>After four years, countless hours of practice and little sleep I finally realize how much this team taught me. We pour our blood, sweat, and tears into this dream of becoming the best physically and technically. (Photo by: Miami Hurricanes Rowing)</figcaption>
+          </figure>
+      </section>
+    </main>
 
 
     <footer>
-      <p><a href="#top">Return to top</a></p>
-    </footer>
-
-    <footer>
+    <button onclick="scrollToTop()">
+         Click to scroll to top
+    </button>
       <p>&copy; Copyright <time datetime="2021">2021</time> &ndash; Marilou Chardin</p>
     </footer>
+
+    <div id="normal"></div>
+
+    <script>
+      var normal = document.querySelector("#normal");
+
+      window.addEventListener("scroll", function() {
+        if (window.scrollY > 20) {
+          normal.style.backgroundColor = "rgb(99,91,156,0.95)";
+        } else {
+          normal.style.backgroundColor = "rgb(99,91,156,0.75)";
+        }
+
+        normal.style.transition = "all .5s linear";
+
+      });
+    </script>
+
+    <script src=
+      "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script>
+      function scrollToTop() {
+          $(window).scrollTop(0);
+      }
+    </script>
 
   </body>
 </html>

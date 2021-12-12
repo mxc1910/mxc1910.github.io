@@ -1,1 +1,224 @@
-style.css
+
+
+
+
+
+
+
+/*background
+2880x1920
+background-attachment: fixed;
+background-size: cover;*/
+
+/* nav */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+#header-contents {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+
+}
+
+header nav:first-of-type {
+  order: 0;
+}
+
+header div {
+  order: 1;
+}
+
+header nav:last-of-type {
+  order: 2;
+}
+
+nav ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 3em;
+}
+
+main {
+  margin: 200px auto 0 auto;
+  max-width: 900px;
+}
+
+#normal {
+  background-color: rgba(99,91,156,0.5);
+  width: 100%;
+  height: 180px;
+  position: fixed;
+  left: 0;
+  top: -60px;
+  z-index: 10;
+}
+
+
+body {
+
+}
+
+.class-for-index {
+
+}
+
+.class-for-about {
+
+}
+
+.class-for-portfolio {
+
+}
+
+
+.class-for-rowing {
+
+}
+
+.class-for-contact {
+
+}
+
+ /*Contact page */
+
+ /* Social media */
+.instagram {
+  color: pink;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.instagram:hover {
+  color: purple;
+}
+
+.facebook {
+  color: pink;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.facebook:hover {
+  color: purple;
+}
+
+.tiktok {
+  color: pink;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.tiktok:hover {
+  color: purple;
+}
+
+.linkedin {
+  color: pink;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.linkedin:hover {
+  color: purple;
+}
+
+/*form*/
+body {
+  font-family: sans-serif;
+}
+
+section + #contact {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 600px;
+  width: 100%;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px black;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0px;
+  font-size: 18px;
+  border: 2px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"]{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin: 0px 0px 0px 1px;
+  font-size: 20px;
+  border-radius: 6px;
+  font-family: cursive;
+  color: blue;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover{
+  color: red;
+  background-color: pink;
+  transition: color 0.4s;
+}
+
+/*scrolltop*/
+button[onclick="scrollToTop()"]{
+  background-color: yellow;
+  cursor: pointer;
+  /*border: ;
+  outline: ;*/
+  padding: 3px;
+  margin: 0px 0px 0px 1px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: blue;
+  margin-top: 20px;
+}
+
+button[onclick="scrollToTop()"]:hover{
+  color: yellow;
+  background-color: pink;
+  transition: color 0.4s;
+}

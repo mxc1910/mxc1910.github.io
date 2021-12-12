@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body id="top">
+  <body class="class-for-contact">
 
     <header>
       <div id="header-contents">
@@ -26,14 +26,84 @@
       </div>
     </header>
 
+    <main>
+      <section id="connect">
+        <h2>Connect with me</h2>
+        <div class="social-media">
+          <a class="instagram" href="https://www.instagram.com/marilouchrdn/" target="_blank"><ion-icon name="logo-instagram" style="width:42px;height:42px;"></ion-icon></a>
+          <p>Find me on Instagram</p>
 
+          <a class="facebook" href="https://www.facebook.com/marilou.chardin" target="_blank"><ion-icon name="logo-facebook" style="width:42px;height:42px;"></ion-icon></a>
+          <p>Like me on Facebook</p>
+
+          <a class="tiktok" href="https://vm.tiktok.com/TTPdjfHX2E/" target="_blank"><ion-icon name="logo-tiktok" style="width:42px;height:42px;"></ion-icon></a>
+          <p>Follow me on Tiktok</p>
+
+          <a class="linkedin" href="https://www.linkedin.com/in/marilou-chardin-18a536160/" target="_blank"><ion-icon name="logo-linkedin" style="width:42px;height:42px;"></ion-icon></a>
+          <p>Connect with me on Linkedin</p>
+      </section>
+
+      <section id="contact">
+        <h2>Get in contact</h2>
+        <div class="container">
+          <form action="https://formspree.io/f/xvoloael" method="POST">
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="Name" name="Name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="Message" id="message" cols="20" rows="10"></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer>
-      <p><a href="#top">Return to top</a></p>
+    <button onclick="scrollToTop()">
+           Click to scroll to top
+    </button>
+      <p>&copy; Copyright <time datetime="2021">2021</time> &ndash; Marilou Chardin</p>
     </footer>
 
-    <footer>
-      <p>&copy; <time datetime="2021">2021</time> &ndash; Marilou Chardin</p>
-    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <div id="normal"></div>
+
+    <script>
+      var normal = document.querySelector("#normal");
+
+      window.addEventListener("scroll", function() {
+        if (window.scrollY > 20) {
+          normal.style.backgroundColor = "rgb(99,91,156,0.95)";
+        } else {
+          normal.style.backgroundColor = "rgb(99,91,156,0.75)";
+        }
+
+        normal.style.transition = "all .5s linear";
+
+      });
+    </script>
+
+    <script src=
+    "https://code.jquery.com/jquery-3.3.1.min.js">
+  </script>
+    <script>
+        function scrollToTop() {
+            $(window).scrollTop(0);
+        }
+    </script>
 
   </body>
+</html>
