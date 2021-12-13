@@ -203,7 +203,7 @@ nav {
 
 /*form*/
 
-section + #contact {
+section + #contacta {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -329,7 +329,6 @@ a:active {
   color: #A6E6FF;
 }
 
-
 a[href^="mailto:"]:link
 {
   color: #3883A4;
@@ -355,31 +354,30 @@ img {
   height: auto;
 }
 
-
 footer {
   position: sticky;
   margin: 0 -240px;
   padding-left: 20px;
 }
 
-.rowing h2 {
-  margin-top: 0;
+#rowing h2 {
+  margin: 0 auto;
 }
 
-.rowing figure {
-  margin: 32px 0 0 0;
+#rowing figure {
+  margin: 32px 0 100px -20px;
   overflow: auto;
   clear: both;
 }
 
-.rowing figure img {
+#rowing figure img {
   float: left;
   margin-right: 20px;
 }
 
 /*portfolio*/
 #portfolio h2 {
-  margin: 0;
+  margin: 0 auto;
 }
 
 #portfolio h3 {
@@ -409,11 +407,11 @@ section h4 {
   position: relative;
 }
 
-.contact h2 {
+#contact h2 {
   margin: 0;
 }
 
-.contact {
+#contact {
   color: #3883A4;
 }
 
@@ -473,4 +471,19 @@ figcaption {
 
 main, li {
   list-style-type: square;
+}
+
+/*Contact */ 
+#contacta {
+  background-color:  rgba(207,143,115,0.9);
+  border-radius: 8px;
+}
+
+#contact h2 {
+  text-align: center; 
+}
+
+#connect {
+  position: relative; 
+  top: -615px;
 }
