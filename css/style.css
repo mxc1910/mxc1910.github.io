@@ -386,8 +386,6 @@ footer {
   border-bottom: 1px solid #2C454F;
 }
 
-
-
 #portfolio section {
   margin-bottom: 30px;
   position: relative;
@@ -432,7 +430,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  margin: 120px 50px;
+  margin: 120px 50px -40px 50px;
 }
 
 /* test grid about*/
