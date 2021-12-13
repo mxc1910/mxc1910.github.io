@@ -487,3 +487,10 @@ main, li {
   position: relative; 
   top: -615px;
 }
+
+.center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
