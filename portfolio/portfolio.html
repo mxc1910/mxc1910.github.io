@@ -7,17 +7,16 @@
   </head>
 
   <body class="class-for-portfolio">
-
     <header>
       <div id="header-contents">
         <div>
           <h1>Marilou Chardin</h1>
+
         </div>
 
         <nav>
           <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
+            <li><a href="../index.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="../rowing/rowing.html">Rowing</a></li>
             <li><a href="../contact.html">Contact</a></li>
@@ -26,7 +25,9 @@
       </div>
     </header>
 
+
     <main>
+      <div class="box">
       <h2>Curriculum Vitae</h2>
       <h3>Education</h3>
 
@@ -121,11 +122,12 @@
         <p>Activities&#58; University of Miami Rowing team member, Pôle Espoir member, Volunteer note-taker, Little Sisters of the Poor charity work</p>
         <p>Interests&#58; Travels, economics, fine arts, rowing, animal welfare</p>
       </section>
+      </div>
     </main>
 
     <footer>
     <button onclick="scrollToTop()">
-         Click to scroll to top
+         Return to top
     </button>
       <p>&copy; Copyright <time datetime="2021">2021</time> &ndash; Marilou Chardin</p>
     </footer>
@@ -137,9 +139,9 @@
 
       window.addEventListener("scroll", function() {
         if (window.scrollY > 20) {
-          normal.style.backgroundColor = "rgb(99,91,156,0.95)";
+          normal.style.backgroundColor = "rgb(115, 179, 207,0.95)";
         } else {
-          normal.style.backgroundColor = "rgb(99,91,156,0.75)";
+          normal.style.backgroundColor = "rgb(115, 179, 207,0.75)";
         }
 
         normal.style.transition = "all .5s linear";

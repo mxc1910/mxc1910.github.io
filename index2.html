@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Marilou Chardin</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="container">
+
+    <header>
+      <div id="header-contents">
+        <div>
+          <h1>Marilou Chardin</h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio/portfolio.html">Portfolio</a></li>
+            <li><a href="rowing/rowing.html">Rowing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+    <aside>
+      <figure>
+        <img src="images/graduation.jpg" alt="Graduation Day." />
+        <figcaption>Graduation day at the University of Miami. </figcaption>
+      </figure>
+    </aside>
+    </main>
+
+    <footer>
+    <button onclick="scrollToTop()">
+         Return to top
+    </button>
+      <p>&copy; <time datetime="2021">2021</time> &ndash; Marilou Chardin</p>
+    </footer>
+
+    <div id="normal"></div>
+
+    <script>
+      var normal = document.querySelector("#normal");
+
+      window.addEventListener("scroll", function() {
+        if (window.scrollY > 20) {
+          normal.style.backgroundColor = "rgb(115, 179, 207,0.95)";
+        } else {
+          normal.style.backgroundColor = "rgb(115, 179, 207,0.75)";
+        }
+
+        normal.style.transition = "all .5s linear";
+
+      });
+    </script>
+
+    <script src=
+      "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script>
+        function scrollToTop() {
+            $(window).scrollTop(0);
+        }
+    </script>
+    </div>
+  </body>
+</html>

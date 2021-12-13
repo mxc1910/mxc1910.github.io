@@ -1,14 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yrsa&display=swap');
+
+/*font*/
+h1 {
+  font-family: "Nothing You Could Do", "Georgia", cursive;
+  font-weight: 400;
+  font-size: 53px;
+  color: #f9f9f9;
+  margin-top: -8px;
+  margin-left: -80px;
+  line-height: 1.4;
+}
 
 
+h2,
+h3,
+nav {
+  font-family:"Poppins", "Verdana", sans-serif;
+  font-size: 28px;
+  color: #3883A4;
+}
 
+nav {
+  font-size: 20px;
+  margin-right: -110px;
+}
 
+a {
+  text-decoration: none;
+}
 
+body {
+  font-family: "Yrsa", "Tahoma", serif;
+  font-weight: 350;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #2C454F;
+}
 
+p {
+  max-width: 700px;
+  line-height: 27.2px;
+  text-align: left;
+}
 
-/*background
-2880x1920
-background-attachment: fixed;
-background-size: cover;*/
+/*background*/
+
+body {
+  background-image: url(../images/interlaced.png);
+  background-attachment: fixed;
+  overflow: auto;
+}
+
+.box {
+  background: white;
+  padding: 50px;
+  margin: 50px;
+  background-origin: padding-box;
+}
 
 /* nav */
 header {
@@ -50,12 +102,12 @@ nav li {
 }
 
 main {
-  margin: 200px auto 0 auto;
-  max-width: 900px;
+  margin: 100px auto 0 auto;
+  max-width: 960px;
 }
 
 #normal {
-  background-color: rgba(99,91,156,0.5);
+  background-color: rgba(115, 179, 207,0.5);
   width: 100%;
   height: 180px;
   position: fixed;
@@ -66,16 +118,38 @@ main {
 
 
 body {
-
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "masthead"
+  "main"
+  "copyright";
 }
 
-.class-for-index {
 
+header {
+  grid-area: masthead;
 }
 
-.class-for-about {
-
+main {
+  grid-area: main;
+  padding: 20px;
 }
+
+footer {
+  grid-area: copyright;
+  margin-top: 10px;
+}
+
+
+#aboutme {
+  background-color: yellow;
+}
+
+
 
 .class-for-portfolio {
 
@@ -134,9 +208,6 @@ body {
 }
 
 /*form*/
-body {
-  font-family: sans-serif;
-}
 
 section + #contact {
   padding: 0;
@@ -144,7 +215,7 @@ section + #contact {
   box-sizing: border-box;
   height: 600px;
   width: 100%;
-  background-color: pink;
+  background-color: #CF8F73;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,35 +261,69 @@ button[type="submit"]{
   margin: 0px 0px 0px 1px;
   font-size: 20px;
   border-radius: 6px;
-  font-family: cursive;
-  color: blue;
+  color: #2C454F;
   text-align: center;
   margin-top: 10px;
   cursor: pointer;
+  background-color: #BFDCE9; 
+  font-family: "Yrsa", "Tahoma", serif;
+  font-size: 20px;
 }
 
 button[type="submit"]:hover{
-  color: red;
-  background-color: pink;
+  color: hsl(59,58.8%,61.0%);
+  background-color: #3883A4;
   transition: color 0.4s;
 }
 
 /*scrolltop*/
 button[onclick="scrollToTop()"]{
-  background-color: yellow;
+  background-color: #BFDCE9;
   cursor: pointer;
   /*border: ;
   outline: ;*/
   padding: 3px;
   margin: 0px 0px 0px 1px;
   font-size: 14px;
-  border-radius: 5px;
-  color: blue;
+  border-radius: 9px;
+  color: #2C454F;
   margin-top: 20px;
 }
 
 button[onclick="scrollToTop()"]:hover{
-  color: yellow;
-  background-color: pink;
+  color: hsl(59,58.8%,61.0%);
+  background-color: #3883A4;
   transition: color 0.4s;
+}
+
+footer {
+    background-color: #73B3CF;
+    padding: 0 80px;
+    margin: 0 -240px;
+    font-size: small;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+/*links*/
+nav
+a:link {
+  color: #3883A4;
+}
+
+nav
+a:visited {
+  color: #3883A4;
+}
+
+nav
+a:hover {
+  color: hsl(59,58.8%,61.0%);
+}
+
+nav
+a:active {
+  color: #A6E6FF;
 }
